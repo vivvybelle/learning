@@ -8,14 +8,15 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println(getMessage("fred"));
+        System.out.println(getMessage("fred", "?"));
     }
     
-    public static String getMessage(String name) {
+    public static String getMessage(String name, String punctuation) {
     	if (null == name || 0 == name.length()) {
-    		return "Hello!";
+    		return "Hello" + punctuation
+;
     	} else {
-    		return "Hello " + name.substring(0, 1).toUpperCase() +name.substring(1) + "!";
+    		return "Hello " + name + punctuation;
     	}
     }
 }

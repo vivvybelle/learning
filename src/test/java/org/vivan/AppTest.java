@@ -18,21 +18,32 @@ public class AppTest
     }
 	
 	@Test(dataProvider = "getMessageTestDP")
-    public void getMessageTest(String in, String expected)
+    public void getMessageTest(String name, String punctuation, String expected )
     {
-		assertEquals(App.getMessage(in), expected);
+		assertEquals(App.getMessage(name, punctuation), expected);
     }
 
 	@DataProvider
 	public Object[][] getMessageTestDP() {
 		return new Object[][] {
-			{null, "Hello!"},
-			{"", "Hello!"},
+			//exclamation mark
+			{null, "!", "Hello!"},
+			{"", "!", "Hello!"},
 			
-			{"s", "Hello S!"},
+			{"s", "!", "Hello s!"},
 			
-			{"bob", "Hello Bob!"},
-			{"fred", "Hello Fred!"},
+			{"bob", "!", "Hello bob!"},
+			{"fred", "!", "Hello fred!"},
+
+			//question mark
+			{null, "?", "Hello?"},
+			{"", "?", "Hello?"},
+			
+			{"s", "?", "Hello s?"},
+			
+			{"bob", "?", "Hello bob?"},
+			{"fred", "?", "Hello fred?"},
+
 		};
 	}
 }
