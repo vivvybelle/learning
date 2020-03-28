@@ -43,7 +43,11 @@ public class AppTest
 			
 			{"bob", "?", "Hello bob?"},
 			{"fred", "?", "Hello fred?"},
-
 		};
+	}
+	
+	@Test
+	public void mainTest() {
+		App.main(null);
 	}
 }
