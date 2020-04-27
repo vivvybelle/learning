@@ -7,6 +7,6 @@ public class Subtracter {
     int minuend;
     
     public int subtract(int in){
-        return in - minuend;
+        return minuend - in;
     }
 }
