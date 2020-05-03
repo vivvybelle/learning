@@ -29,4 +29,11 @@ public class DividerTest {
             {-6, 3, -2},
         };
     }
+    
+    @Test
+    (expectedExceptions=ArithmeticException.class
+            , expectedExceptionsMessageRegExp="/ by zero")
+    public void divideByZeroTest() {
+        new Divider(5).divide(0);
+    }
 }
