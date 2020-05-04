@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class DividerTest {
 
     @Test(dataProvider="divideTestDP")
-    public void subtractTest(int init, int divitend, int expected) {
+    public void divideTest(int init, int divitend, int expected) {
         Divider d = new Divider(init);
         assertEquals(d.divide(divitend), expected);
     }
