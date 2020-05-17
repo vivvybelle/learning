@@ -19,7 +19,7 @@ public class SquareTest {
     public Object[][] areaTestDP() {
         return new Object[][] {
             {0,0},
-            {1,2},
+            {1,1},
             {2,4},
             
             {5,25},
