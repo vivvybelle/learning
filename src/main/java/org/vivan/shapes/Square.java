@@ -1,4 +1,4 @@
-package org.vivan.experiments;
+package org.vivan.shapes;
 
 import lombok.Value;
 
