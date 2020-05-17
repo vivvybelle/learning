@@ -3,14 +3,16 @@ package org.vivan.shapes;
 import lombok.Value;
 
 @Value
-public class Square {
+public class Square implements Shape {
     int size;
 
-    public int area() {
+    @Override
+    public float area() {
         return size * size;
     }
 
-    public int perimeter() {
+    @Override
+    public float perimeter() {
         return (size * 4);
     }
 

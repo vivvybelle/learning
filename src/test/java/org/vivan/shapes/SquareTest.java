@@ -5,7 +5,6 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.vivan.shapes.Square;
 
 public class SquareTest {
 

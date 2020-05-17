@@ -3,15 +3,17 @@ package org.vivan.shapes;
 import lombok.Value;
 
 @Value
-public class Rectangle {
+public class Rectangle implements Shape {
     int length;
     int width;
 
-    public int area() {
+    @Override
+    public float area() {
         return length * width;
     }
 
-    public int perimeter() {
+    @Override
+    public float perimeter() {
         return (length * 2) + (width * 2);
     }
 }

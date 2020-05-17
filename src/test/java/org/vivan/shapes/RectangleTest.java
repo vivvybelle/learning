@@ -2,12 +2,10 @@ package org.vivan.shapes;
 
 import static org.testng.Assert.assertEquals;
 
-
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.vivan.shapes.Rectangle;
 
-public class RectangleTest<area> {
+public class RectangleTest {
 
     @Test(dataProvider="areaTestDP")
     public void areaTest(int length,int width, int expected) {
