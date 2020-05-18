@@ -10,7 +10,7 @@ public class Circle implements Shape {
     
     @Override
     public float area() {
-        return pi * (float) Math.pow(radius, 2);
+        return pi * radius * radius;
     }
 
     @Override
